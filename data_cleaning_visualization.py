@@ -1,6 +1,12 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+# Ensure required libraries are installed
+try:
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+except ImportError as e:
+    print("Missing library:", e.name)
+    print("Please install it using: pip install", e.name)
+    exit(1)
 
 # Sample data
 data = {
